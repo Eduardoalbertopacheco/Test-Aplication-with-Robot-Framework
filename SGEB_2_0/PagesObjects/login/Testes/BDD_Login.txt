@@ -1,0 +1,23 @@
+
+
+Caso de teste 01 - Realizar Login Com Sucesso no Sitema
+    Dado que eu acesso a tela de login do sistema
+    Quando preencher as credenciais
+    E clicar em Entrar
+    Então devo logar com suscesso no sistema
+
+Cenário 02 - Login Sem Preencher nenhum Campo
+    Dado que eu acesso a tela de login do sistema
+    E não preencho nenhum campo
+    E clicar em Entrar
+    Então devo visualizar Msg de campo abrigatório para usuário
+    Então devo visualizar Msg de campo abrigatório para Senha
+    Então devo visualizar Msg de campo abrigatório para token
+
+Cenário 03 - Login com Senha Incorreta
+    Dado que eu acesso a tela de login do sistema
+    E prencho o campo 'Usuário'
+    E prencho o campo 'Senha' com uma senha Incorreta
+    E prencho o campo 'Token'
+    E clicar em Entrar
+    Então devo visualizar um popup de problema com a senha    
